@@ -1,12 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Survey</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
 </head>
+
 <body>
-    
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4"><span class="fas fa-user-friends"></span>FriendFinder</h1>
+            <hr class="my-4">
+            <h2><span class="fas fa-poll-h"></span>Survey</h2>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-header">
+                        <b>About You</b>
+                    </div>
+
+                    <div class="card-body">
+
+                        <form role="form">
+                            <div class="form-group">
+                                <label for="name">Name<i>(Required)</i></label>
+                                <input type="text" class="form-control" id="name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="image">Link to Photo<i>(Required)</i></label>
+                                <input type="text" class="form-control" id="name">
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="card">
+                    <div class="card-header">
+                        <b>Survey Questions</b>
+                    </div>
+
+                    <div class="card-body">
+
+                        <form role="form">
+                            <div class="form-group">
+
+                                <label for="questions"><b>Question 1</b></label>
+                                <h6>.......</h6>
+                                <select class="form-control col-md-4" id="question1">
+                                    <option disabled selected>Choose Best Answer</option>
+                                    <option value="1">1 (Strongly Disagree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Strongly Agree)</option>
+                                </select>
+                                <hr>
+
+                                <label for="questions"><b>Question 2</b></label>
+                                <h6>.......</h6>
+                                <select class="form-control col-md-4" id="question2">
+                                    <option disabled selected>Choose Best Answer</option>
+                                    <option value="1">1 (Strongly Disagree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Strongly Agree)</option>
+                                </select>
+                                <hr>
+
+                                <label for="questions"><b>Question 3</b></label>
+                                <h6>.......</h6>
+                                <select class="form-control col-md-4" id="question3">
+                                    <option disabled selected>Choose Best Answer</option>
+                                    <option value="1">1 (Strongly Disagree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Strongly Agree)</option>
+                                </select>
+                                <hr>
+
+                                <label for="questions"><b>Question 4</b></label>
+                                <h6>.......</h6>
+                                <select class="form-control col-md-4" id="question4">
+                                    <option disabled selected>Choose Best Answer</option>
+                                    <option value="1">1 (Strongly Disagree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Strongly Agree)</option>
+                                </select>
+                                <hr>
+
+                                <label for="questions"><b>Question 5</b></label>
+                                <h6>.......</h6>
+                                <select class="form-control col-md-4" id="question5">
+                                    <option disabled selected>Choose Best Answer</option>
+                                    <option value="1">1 (Strongly Disagree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Strongly Agree)</option>
+                                </select>
+                                <hr>
+
+                                <label for="questions"><b>Question 6</b></label>
+                                <h6>.......</h6>
+                                <select class="form-control col-md-4" id="question6">
+                                    <option disabled selected>Choose Best Answer</option>
+                                    <option value="1">1 (Strongly Disagree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Strongly Agree)</option>
+                                </select>
+                                <hr>
+
+                                <label for="questions"><b>Question 7</b></label>
+                                <h6>.......</h6>
+                                <select class="form-control col-md-4" id="question7">
+                                    <option disabled selected>Choose Best Answer</option>
+                                    <option value="1">1 (Strongly Disagree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Strongly Agree)</option>
+                                </select>
+                                <hr>
+
+                                <label for="questions"><b>Question 8</b></label>
+                                <h6>.......</h6>
+                                <select class="form-control col-md-4" id="question8">
+                                    <option disabled selected>Choose Best Answer</option>
+                                    <option value="1">1 (Strongly Disagree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Strongly Agree)</option>
+                                </select>
+                                <hr>
+
+                                <label for="questions"><b>Question 9</b></label>
+                                <h6>.......</h6>
+                                <select class="form-control col-md-4" id="question9">
+                                    <option disabled selected>Choose Best Answer</option>
+                                    <option value="1">1 (Strongly Disagree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Strongly Agree)</option>
+                                </select>
+                                <hr>
+
+                                <label for="questions"><b>Question 10</b></label>
+                                <h6>.......</h6>
+                                <select class="form-control col-md-4" id="question10">
+                                    <option disabled selected>Choose Best Answer</option>
+                                    <option value="1">1 (Strongly Disagree)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Strongly Agree)</option>
+                                </select>
+                                <hr>
+
+                            </div>
+
+                            <button type="submit" class="btn btn-primary submit" data-toggle="modal" data-target="#bestMatch">SUBMIT</button>
+                        </form>
+
+                    </div>
+                </div>
+
+                <!-- Modal Info -->
+                <div class="modal fade" id="bestMatch" tabindex="-1" role="dialog" aria-labelledby="bestMatchLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="bestMatchLabel">Best Match</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+
+                            <!-- Modal Body/Best Match Display -->
+                            <div class="modal-body">
+                                <h2 id="bestMatch-name"></h2>
+                                <img id="bestMatch-photo" src="">
+                            </div>
+
+                            <!-- Modal Footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p><a href="/api/friends">API Friends List</a></p>
+        </div>
+    </footer>
+
 </body>
+
 </html>
+
+<script type="text/javascript">
+
+// Referenced from activity 16(week 14)
+$('.submit').on('click', function(event){
+    event.preventDefault()
+    console.log("Form Submitted")
+
+    let newFriend = {
+        name: $('#name').val().trim(),
+        photo: $('#photo').val().trim(),
+        scores: [
+            $('#question1').val(),
+            $('#question2').val(),
+            $('#question3').val(),
+            $('#question4').val(),
+            $('#question5').val(),
+            $('#question6').val(),
+            $('#question7').val(),
+            $('#question8').val(),
+            $('#question9').val(),
+            $('#question10').val(),
+        ]
+    }
+})
