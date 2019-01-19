@@ -12,8 +12,8 @@ app.use(express.json());
 
 // Require necessary routing files
 // ----------------------
-require('.app/routing/apiRoutes')(app)
-require('.app/routing/htmlRoutes')(app)
+require('../FriendFinder/app/routing/apiRoutes')(app)
+require('../FriendFinder/app/routing/htmlRoutes')(app)
 
 
 // Starts the server to begin listening
