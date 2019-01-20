@@ -233,7 +233,7 @@
 <script type="text/javascript">
 
 // Referenced from activity 16(week 14)
-$('.submit').on('click', function(event){
+$('.submit').on('click', (event) => {
     event.preventDefault()
     console.log("Form Submitted")
 
@@ -255,7 +255,7 @@ $('.submit').on('click', function(event){
     }
     console.log(newFriend)
 
-    $.post('/api/friends', newFriend, function(data){
+    $.post('/api/friends', newFriend, (data) => {
         if (data) {
             console.log("New Friend Added",
             '######  DATA INFO  ######\n',

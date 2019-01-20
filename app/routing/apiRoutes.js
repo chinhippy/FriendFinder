@@ -1,12 +1,13 @@
 // LOAD DATA
 const friendData = require("../data/friends");
 
-module.exports = function(app) {
-    app.get("/api/friends", function(req, res) {
+module.exports = (app) => {
+    // API get requests
+    app.get("/api/friends", (req, res) => {
         res.json(friendData);
     });
-
-    app.post("/api/friends", function(req, res) {
+    // API post requests
+    app.post("/api/friends", (req, res) => {
      
         var bestMatch = {
             name: "",
